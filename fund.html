@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Provident Fund</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+          <h4>Provident Fund</h4>
+        </div>
+        <div class="col-sm-4 text-right">
+          <button type="button" class="text-right btn btn-light badge badge-pill">+ Add Provident Fund</button>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="dropdown">
+              Show
+              <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">
+                10
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">10</a>
+                <a class="dropdown-item" href="#">25</a>
+                <a class="dropdown-item" href="#">50</a>
+                <a class="dropdown-item" href="#">100</a>
+              </div>
+              entries
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Employee Name</th>
+          <th><i style="font-size:24px" class="fa">&#8645;</i>Provident Fund Type</th>
+          <th><i class="fa fa-sort-amount-down"></i>Employee Share</th>
+          <th style="text-align: right;">
+          <th><i style="font-size:24px" class="fa">&#8645;</i>Organization Share </th>
+          <th><i style="font-size:24px" class="fa">&#8645;</i>Status</th>
+          <th></th>
+          <th><i style="font-size:24px" class="fa">&#8645;</i>Action <i style="font-size:24px" class="fa">&#8645;</i>
+          </th>
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="fa fa-user-circle" style="font-size:30px"></i>Jonh Doe</td>
+          <td>Percentage of Basic Salary</td>
+          <td>2%</td>
+          <td></td>
+          <td>2%</td>
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn btn-light btn-block dropdown-toggle" data-toggle="dropdown"><i
+                  class="fa fa-dot-circle" style="font-size:15px;color:red"></i>Pending</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle"
+                    style="font-size:15px;color:red"></i>Pending</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle"
+                    style="font-size:15px;color:green"></i>Approve</a>
+              </div>
+          </td>
+          <td style="text-align: right;">
+          <td><i style="font-size:16px" class="fa">&#xf142;</i></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+  </div>
+  </div>
+</body>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="dataTables_info" id="dataTables-example_info" role="status" aria-live="polite">Showing 1 to 1 of
+      entries</div>
+  </div>
+  <div class="col-sm-6">
+    <div class="text-right text-warning">
+      <ul class="pagination justify-content-end ">
+        <li class="page-item text-warning disabled"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item text-warning"><a class="page-link" href="#">1</a></li>
+        <li class="page-item text-warning disabled"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</html>

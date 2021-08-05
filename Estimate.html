@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+<div class="container-fluid">
+    <div class="jumbotron">
+    <div class="row">
+
+<!--Header Side  -->
+    <div class="col-sm-10">
+        <h4>Estimates</h4>
+    </div>
+
+    <div class="col-sm-2">
+        <button type="button" class="btn btn-warning badge badge-pill">+ Create New Estimates</button>
+    </div>
+
+<!-- 2nd row -->
+    <div class="col-sm-3">
+        <form action="/action_page.php">
+            <div class="form-group">
+            <input type="date" class="form-control" placeholder="From" name="text2">
+            </div>
+        </form>
+    </div>
+
+    <div class="col-sm-3">
+        <form action="/action_page.php">
+            <div class="form-group">
+            <input type="date" class="form-control" placeholder="To" name="text2">
+            </div>
+        </form>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="btn-group">
+            <button type="button" class="btn btn-light"><header class="blockquote-header">Status</header>--Select Status--</button>
+            <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Pending</a>
+              <a class="dropdown-item" href="#">Paid</a>
+              <a class="dropdown-item" href="#">Partially Paid</a>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-sm-3">
+        <button type="button" class="btn btn-success btn-block">Search</button>
+    </div>
+
+<!-- Table -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>Estimate Number</th>
+            <th>Client</th>
+            <th>Estimate Date</th>
+            <th>Expiry Date</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td><a href="#" data-toggle="tooltip">EST-0001</a></td>
+            <td>Global Technologies</td>
+            <td>1 Sep 2017</td>
+            <td>7 Sep 2017</td>
+            <td>$2099</td>
+            <td><button type="button" class="btn btn-outline-success btn-block">Accepted</button></td>
+            <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+            </tr>
+            <tr>
+            <td><a href="#" data-toggle="tooltip">EST-0002</a></td>
+            <td>Delta Infotech</td>
+            <td>1 Sep 2017</td>
+            <td>7 Sep 2017</td>
+            <td>$2099</td>
+            <td><button type="button" class="btn btn-outline-danger btn-block">Declined</button></td>
+            <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+            </tr>
+            <tr>
+            <td><a href="#" data-toggle="tooltip">ET-0003</a></td>
+            <td>Cream Inc</td>
+            <td>1 Sep 2017</td>
+            <td>7 Sep 2017</td>
+            <td>$2099</td>
+            <td><button type="button" class="btn btn-outline-info btn-block">Sent</button></td> 
+            <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+            </tr>
+            <tr>
+            <td><a href="#" data-toggle="tooltip">ET-0003</a></td>
+            <td>International Software Inc</td>
+            <td>1 Sep 2017</td>
+            <td>7 Sep 2017</td>
+            <td>$2099</td>
+            <td><button type="button" class="btn btn-outline-warning btn-block">Expired</button></td> 
+            <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+            </tr>
+        </tbody>
+        </table>
+
+
+
+    </div>       
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="fluid-container">
+        <!-- <div class="jumbotron"> -->
+        <div class="row">
+            <div class="col-sm-7 bg-light grey">
+                <button type="button" class="btn btn-outline-secondary">ADD TASK</button>
+                <i class="fa fa-cog" style="font-size:30px; text-align-last: right; color: rgb(243, 124, 12);"></i>
+                <hr>
+                <div class="list-group">
+                    <br>
+                    <div class="checkbox">
+                        <a href="#" class="list-group-item list-group-item-action" style="width: 98%;"><input
+                                type="checkbox" style="width: 2.5%;" value="">Appointment booking with payment
+                            gateway</a>
+                        <a href="#" class="list-group-item list-group-item-action" style="width: 98%;"><input
+                                type="checkbox" style="width: 2.5%;" value="">Doctor available module</a>
+                        <a href="#" class="list-group-item list-group-item-action" style="width: 98%;"><input
+                                type="checkbox" style="width: 2.5%;" value="">Patient and Doctor video
+                            conferencing</a>
+                        <a href="#" class="list-group-item list-group-item-action" style="width: 98%;"><input
+                                type="checkbox" style="width: 2.5%;" value="">Private chat module</a>
+                        <a href="#" class="list-group-item list-group-item-action" style="width: 98%;"><input
+                                type="checkbox" style="width: 2.5%;" value="">Patient Profile add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 text-left"> Assigned to
+                <i class='fas fa-user-circle' style='font-size:30px; color:silver'></i>
+                <i class='fas fa-plus-circle' style='font-size:30px; color: lightgrey'></i>
+                <i class="fa fa-ellipsis-v" style="font-size:33px; color:rgb(248, 122, 18)" style="text-align: right;"></i>
+                <hr>
+                <pre class="pre-scrollable" style="height: 360px;"><h3>Harvey Clinic Phase 1</h3><hr><h6 class="small text-muted text-left">
+                         Lesley Grauer created task Jan 26, 2015
+                         Lesley Grauer added to Harvey Clinic Jan 26, 2015
+                         Lesley Grauer assigned to John Doe Jan 26, 2015</h6><hr><h6 class="small text-muted text-left"> 
+                         John Doe changed the due date to Sep 28 9:09pm
+                         John Doe assigned to you 9:10pm</h6>
+                   <p><i class='fas fa-user-circle' style='font-size:40px; text-align: left ; color:silver'></i> 
+                     John Doe 8:35 am
+                     I'm just looking around.
+                     Will you tell me something about
+                     yourself?</p>
+                     <h6 class="text-success text-center">John Doe completed this task.<a href="#" class="text-muted">Today at 9:27am</a></h6>
+                     <p><i class='fas fa-user-circle' style='font-size:40px; text-align: left ; color:silver'></i>
+                      John Doe attached 3 files<i class="fa fa-paperclip" style="font-size:20px"></i>  
+                      Dec 17, 2014 at 4:32am</p>
+                      <i class="fas fa-file" style="color: lightgrey;"></i> project_document.avi
+                      <i class="fas fa-file" style="color: lightgrey;"></i> video_conferencing.psd
+                      <i class="fas fa-file" style="color: lightgrey;"></i> landing_page.psd
+                      <p><i class='fas fa-user-circle' style='font-size:40px; text-align: left ; color:silver'></i>
+                        Jeffery Lalor attached file<i class="fa fa-paperclip" style="font-size:20px"></i> 
+                        Yesterday at 9:16pm</p>
+                        <i class="fa fa-file-pdf-o" style="font-size:15px" style="font-size:25px;"></i> Document_2016.pdf
+
+                        <p><i class='fas fa-user-circle' style='font-size:40px; text-align: left ; color:silver'></i></p>
+                        Jeffery Lalor attached file<i class="fa fa-paperclip" style="font-size:20px"></i> 
+                        Today at 12:42pm
+                        <p class="text-primary">
+                             logo2.png</p>
+                        <img src="../attendance-management/logo2 (1).png" class="rounded" alt="logo2">
+                        <p class="text-primary">
+                            avatar-1.jpg</p>
+                         <img src="../attendance-management/user (1).jpg" class="rounded" alt="user">
+                         
+                         <h6 class="text-muted text-center">John Doe marked task as incomplete1:16pm</h6>
+                    </pre>
+                <hr>
+                <i class="fas fa-paperclip" style="font-size:25px;"></i>
+                <input type="text" placeholder="Type message...." name="type msg" style="width: 60%;">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                    
+            </div>
+        
+        </div>
+</body>
+
+</html>

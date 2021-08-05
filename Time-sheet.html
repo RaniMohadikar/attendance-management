@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+<div class="container-fluid">
+    <div class="jumbotron">
+    <div class="row">
+
+  <!--Header Side  -->
+    <div class="col-sm-10">
+        <h4>Timing Sheet</h4>
+    </div>
+
+    <div class="col-sm-2">
+        <button type="button" class="btn btn-warning badge badge-pill">+ Add  Today Work</button>
+    </div>
+
+  <!-- drop down button -->
+    <div class="col-sm-1">
+        <p>Show</p>
+    </div>
+
+    <div class="col-sm-0.5">
+        <div class="dropdown">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">10</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">25</a>
+              <a class="dropdown-item" href="#">50</a>
+              <a class="dropdown-item" href="#">100</a>
+            </div>
+        </div>     
+    </div>
+
+    <div class="col-sm-1">
+        <p>entries</p>
+    </div>
+
+<!-- Table -->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Employee<i class="fa fa-sort-amount-asc"></i></th>
+          <th>Dates<i style="font-size:24px" class="fa">&#8645;</i></th>
+          <th>Projects<i style="font-size:24px" class="fa">&#8645;</i></th>
+          <th>Assigned Hours<i style="font-size:24px" class="fa">&#8645;</i></th>
+          <th>Hours<i style="font-size:24px" class="fa">&#8645;</i></th>
+          <th>Description<i style="font-size:24px" class="fa">&#8645;</i></th>
+          <th>Action<i style="font-size:24px" class="fa">&#8645;</i></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- box1 -->
+        <tr>
+          <td><button type="button" class="btn btn-secondary">B</button></td>
+          <td>Bernardo Galaviz<footer class="blockquote-footer">Web Developer</footer></td>
+          <td>5 Aug 2017</td>
+          <td>Penabook</td>
+          <td>20</td>
+          <td>12</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque.</td>
+          <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+        </tr>
+        <!-- box2 -->
+        <tr>
+          <td><button type="button" class="btn btn-secondary">C</button></td>
+          <td>Catherine Manseau<footer class="blockquote-footer">Android Developer</footer></td>
+          <td>5 Aug 2017</td>
+          <td>Penabook</td>
+          <td>20</td>
+          <td>12</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque.</td>
+          <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+        </tr>
+        <!-- box3 -->
+        <tr>
+          <td><button type="button" class="btn btn-secondary">J</button></td>
+          <td>Jeffery Lalor<footer class="blockquote-footer">Team Leader</footer></td>
+          <td>5 Aug 2017</td>
+          <td>Ware house developement</td>
+          <td>20</td>
+          <td>9</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque.</td>
+          <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+        </tr>
+        <!-- box4 -->
+        <tr>
+          <td><button type="button" class="btn btn-secondary">J</button></td>
+          <td>Jeffrey Warden<footer class="blockquote-footer">Web Developer</footer></td>
+          <td>5 Aug 2017</td>
+          <td>School Guru</td>
+          <td>20</td>
+          <td>12</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque.</td>
+          <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+        </tr>
+        <!-- box5 -->
+        <tr>
+          <td><button type="button" class="btn btn-secondary">J</button></td>
+          <td>John Doe<footer class="blockquote-footer">Web Designer</footer></td>
+          <td>5 Aug 2017</td>
+          <td>Food and Drinks</td>
+          <td>20</td>
+          <td>7</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque.</td>
+          <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+        </tr>
+        <!-- box6 -->
+        <tr>
+          <td><button type="button" class="btn btn-secondary">B</button></td>
+          <td>Bernardo Galaviz<footer class="blockquote-footer">Web Developer</footer></td>
+          <td>5 Aug 2017</td>
+          <td>Penabook</td>
+          <td>20</td>
+          <td>12</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque.</td>
+          <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+        </tr>
+        <!-- box7 -->
+        <tr>
+          <td><button type="button" class="btn btn-secondary">B</button></td>
+          <td>Bernardo Galaviz<footer class="blockquote-footer">Web Developer</footer></td>
+          <td>5 Aug 2017</td>
+          <td>Penabook</td>
+          <td>20</td>
+          <td>12</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque.</td>
+          <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+        </tr>
+        <!-- box8 -->
+        <tr>
+          <td><button type="button" class="btn btn-secondary">B</button></td>
+          <td>Bernardo Galaviz<footer class="blockquote-footer">Web Developer</footer></td>
+          <td>5 Aug 2017</td>
+          <td>Penabook</td>
+          <td>20</td>
+          <td>12</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque.</td>
+          <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+        </tr>
+        <!-- box9 -->
+        <tr>
+          <td><button type="button" class="btn btn-secondary">M</button></td>
+          <td>Mike Litorus<footer class="blockquote-footer">IOS Developer</footer></td>
+          <td>5 Aug 2017</td>
+          <td>Harvey Clinic</td>
+          <td>20</td>
+          <td>12</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque.</td>
+          <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+        </tr>
+        <!-- box10 -->
+        <tr>
+          <td><button type="button" class="btn btn-secondary">R</button></td>
+          <td> Richard Miles<footer class="blockquote-footer">Web Developer</footer></td>
+          <td>5 Aug 2017</td>
+          <td>School Guru</td>
+          <td>20</td>
+          <td>12</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque.</td>
+          <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+        </tr>
+  
+      </tbody>
+    </table>
+  
+  <!-- Pagintion -->
+  <div class="col-sm-10">
+    <p>Showing 1 to 10 of 12 entries</p>
+  </div>
+  
+  <div class="col-sm-2">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+  </div>
+
+  
+
+
+
+    </div>       
+    </div>
+</div>
+
+</body>
+</html>

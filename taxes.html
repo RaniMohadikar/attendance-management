@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+  <title>Tax</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-">
+
+          <div class="row">
+            <div class="col-sm-8">
+              <h4>Taxes</h4>
+            </div>
+            <div class="col-sm-4 text-right">
+              <button type="button" class="text-right btn btn-warning badge badge-pill">+ Add Tax</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Tax Name</th>
+                    <th>Tax Percentage(%)</th>
+                    
+                    <th>Status</th>
+                    <th></th>
+                    <th></th>
+                    
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>VAT</td>
+                        <td>14%</td>
+                        
+                        <td><div class="dropdown">
+                          <button type="button" class="btn btn-light btn-block dropdown-toggle" data-toggle="dropdown"><i class="fa fa-dot-circle" style="font-size:15px;color:green"></i>Active</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle" style="font-size:15px;color:green"></i>Active</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle" style="font-size:15px;color:red"></i>Inactive</a>
+                          </div></td>
+                        
+                          <td></td>
+                          <td></td>
+                          
+                          <td><i style="font-size:16px" class="fa">&#xf142;</i></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>GST</td>
+                        <td>30%</td> 
+                      
+                          <td>
+                            <div class="dropdown">
+                            <button type="button" class="btn btn-light btn-block dropdown-toggle" data-toggle="dropdown"><i class="fa fa-dot-circle" style="font-size:15px;color:red"></i>Inactive</button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"><i class="fa fa-dot-circle" style="font-size:15px;color:green"></i>Active
+                              <a class="dropdown-item" href="#"><i class="fa fa-dot-circle" style="font-size:15px;color:red"></i>Inactive
+                            </div></td>
+                          <td></td>
+                          <td></td>
+                          <td><i style="font-size:16px" class="fa">&#xf142;</i></td>
+                </tbody>
+                </table>>
+            </div>
+        </div>
+    </div>
+</body>

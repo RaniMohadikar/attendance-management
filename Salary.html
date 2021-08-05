@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Salary</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10">
+                <h3>Employee Salary</h3>
+            </div>
+            <div class="col-sm-2 text-right">
+                <button type="button" class="btn btn-warning badge badge-pill" style="height: 60%;">+ Add
+                    Salary</button>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text-block" class="form-control mb-2 mr-xl-2" placeholder="Employee Name"
+                            name=" name">
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-2">
+                <select class="form-control form-control mb-2 mr-xl-4">
+                    <option>Role</option>
+                    <option value="bg-warning">Employee</option>
+                    <option value="1">manager</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <select class="form-control form-control mb-2 mr-xl-4">
+                    <option>Leave Status</option>
+                    <option value="bg-warning">Pading</option>
+                    <option value="1">Approved</option>
+                    <option value="1">Reject</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <input type="date" class="form-control" placeholder="From" name="text2">
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-2">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <input type="date" class="form-control" placeholder="To" name="To">
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-2">
+                <button type="Search" class="btn btn-success btn-block">SEARCH</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dropdown">
+                    show
+                    <button type="button" class="dropdown-toggle" style="width: 5%;" data-toggle="dropdown">
+                        10
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">10</a>
+                        <a class="dropdown-item" href="#">25</a>
+                        <a class="dropdown-item" href="#">50</a>
+                        <a class="dropdown-item" href="#">100</a>
+                    </div>
+                    entries
+                </div>
+            </div>
+        </div>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <!-- <--table heading-->
+                    <th>Employee</th>
+                    <th><i class="fa fa-sort-amount-desc"></i>Employee Id</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i>Email</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i>Joining Date</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i>Role</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i> Status</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i></th>
+                    <th>PaySlip<i style="font-size:20px" class="fa">&#8645;</i></th>
+                    <th>Action<i style="font-size:20px" class="fa">&#8645;</i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- box 1 -->
+                <tr>
+                    <td><img src="../attendance-management/user (1).jpg" class="rounded-circle" width="30"
+                            height="30">Bernardo Galaviz<footer class="blockquote-footer">Web Developer</footer>
+                    </td>
+                    <td>FT-0007</td>
+                    <td>bernardogalaviz@example.com</td>
+                    <td>1 Jan 2014</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                data-toggle="dropdown">Web Developer</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Software Engineer</a>
+                                <a class="dropdown-item" href="#">Software Tester</a>
+                                <a class="dropdown-item" href="#">Frontend Developer</a>
+                                <a class="dropdown-item" href="#">UI/UX Developer</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$38400</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-warning text-white">Generate Slip</button></td>
+                    <td><i class="fa fa-ellipsis-v text-right" style="font-size:30px"></i></td>
+                </tr>
+                <!-- box 2 -->
+                <tr>
+                    <td><img src="../attendance-management/user (1).jpg" class="rounded-circle" width="30" height="30">
+                        Jeffery Lalor<footer class="blockquote-footer">Team Leader</footer>
+                    </td>
+                    <td>FT-0009</td>
+                    <td>jefferylalor@example.com</td>
+                    <td>1 Jan 2013</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                data-toggle="dropdown">Team Leader</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Software Engineer</a>
+                                <a class="dropdown-item" href="#">Software Tester</a>
+                                <a class="dropdown-item" href="#">Frontend Developer</a>
+                                <a class="dropdown-item" href="#">UI/UX Developer</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$73550</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-warning text-white">Generate Slip</button></td>
+                    <td><i class="fa fa-ellipsis-v" style="font-size:30px"></i></td>
+                </tr>
+                <!-- box 3 -->
+                <tr>
+                    <td><img src="../attendance-management/user (1).jpg" class="rounded-circle" width="30"
+                            height="30">Jeffrey Warden<footer class="blockquote-footer">Web Developer</footer>
+                    </td>
+                    <td>FT-0006</td>
+                    <td>jeffreywarden@example.com</td>
+                    <td>1 Jan 2013</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                data-toggle="dropdown">Web Developer </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Software Engineer</a>
+                                <a class="dropdown-item" href="#">Software Tester</a>
+                                <a class="dropdown-item" href="#">Frontend Developer</a>
+                                <a class="dropdown-item" href="#">UI/UX Developer</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$45000</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-warning text-white">Generate Slip</button></td>
+                    <td><i class="fa fa-ellipsis-v text-right" style="font-size:30px"></i></td>
+                </tr>
+                <!-- box 4 -->
+                <tr>
+                    <td><img src="../attendance-management/user (1).jpg" class="rounded-circle" width="30"
+                            height="30">John Doe<footer class="blockquote-footer">Web Designer</footer>
+                    </td>
+                    <td>FT-0001</td>
+                    <td>johndoe@example.com</td>
+                    <td>1 Jan 2013</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                data-toggle="dropdown">Web Designer</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Software Engineer</a>
+                                <a class="dropdown-item" href="#">Software Tester</a>
+                                <a class="dropdown-item" href="#">Frontend Developer</a>
+                                <a class="dropdown-item" href="#">UI/UX Developer</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$59698</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-warning text-white">Generate Slip</button></td>
+                    <td><i class="fa fa-ellipsis-v text-right" style="font-size:30px"></i></td>
+                </tr>
+                <!-- box 5 -->
+                <tr>
+                    <td><img src="../attendance-management/user (1).jpg" class="rounded-circle" width="30"
+                            height="30">John Smith<footer class="blockquote-footer">Android Developer</footer>
+                    </td>
+                    <td>FT-0003</td>
+                    <td>johnsmith@example.com</td>
+                    <td>1 Jan 2013</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                data-toggle="dropdown">Android Developer</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Software Engineer</a>
+                                <a class="dropdown-item" href="#">Software Tester</a>
+                                <a class="dropdown-item" href="#">Frontend Developer</a>
+                                <a class="dropdown-item" href="#">UI/UX Developer</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$48200</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-warning text-white">Generate Slip</button></td>
+                    <td><i class="fa fa-ellipsis-v text-right" style="font-size:30px"></i></td>
+                </tr>
+                <!-- box 6 -->
+                <tr>
+                    <td><img src="../attendance-management/user (1).jpg" class="rounded-circle" width="30"
+                            height="30">Lesley Grauer<footer class="blockquote-footer">Team Leader</footer>
+                    </td>
+                    <td>FT-0008</td>
+                    <td>lesleygrauer@example.com</td>
+                    <td>1 Jan 2013</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                data-toggle="dropdown">Team Leader</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Software Engineer</a>
+                                <a class="dropdown-item" href="#">Software Tester</a>
+                                <a class="dropdown-item" href="#">Frontend Developer</a>
+                                <a class="dropdown-item" href="#">UI/UX Developer</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$75500</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-warning text-white">Generate Slip</button></td>
+                    <td><i class="fa fa-ellipsis-v text-right" style="font-size:30px"></i></td>
+                </tr>
+                <!-- box 7 -->
+                <tr>
+                    <td><img src="../attendance-management/user (1).jpg" class="rounded-circle" width="30"
+                            height="30">Loren Gatlin<footer class="blockquote-footer">Android Developer</footer>
+                    </td>
+                    <td>FT-0010</td>
+                    <td>lorengatlin@example.com</td>
+                    <td>1 Jan 2013</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                data-toggle="dropdown">Android Developer</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Software Engineer</a>
+                                <a class="dropdown-item" href="#">Software Tester</a>
+                                <a class="dropdown-item" href="#">Frontend Developer</a>
+                                <a class="dropdown-item" href="#">UI/UX Developer</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$55000</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-warning text-white">Generate Slip</button></td>
+                    <td><i class="fa fa-ellipsis-v text-right" style="font-size:30px"></i></td>
+                </tr>
+                <!-- box 8 -->
+                <tr>
+                    <td><img src="../attendance-management/user (1).jpg" class="rounded-circle" width="30"
+                            height="30">Mike Litorus<footer class="blockquote-footer">IOS Developer</footer>
+                    </td>
+                    <td>FT-0004</td>
+                    <td>mikelitorus@example.com</td>
+                    <td>1 Jan 2013</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                data-toggle="dropdown">IOS Developer</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Software Engineer</a>
+                                <a class="dropdown-item" href="#">Software Tester</a>
+                                <a class="dropdown-item" href="#">Frontend Developer</a>
+                                <a class="dropdown-item" href="#">UI/UX Developer</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$59698</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-warning text-white">Generate Slip</button></td>
+                    <td><i class="fa fa-ellipsis-v text-right" style="font-size:30px"></i></td>
+                </tr>
+                <!-- box 9 -->
+                <tr>
+                    <td><img src="../attendance-management/user (1).jpg" class="rounded-circle" width="30"
+                            height="30">Richard Miles<footer class="blockquote-footer">Web Developer</footer>
+                    </td>
+                    <td>FT-0002</td>
+                    <td>richardmiles@example.com</td>
+                    <td>1 Jan 2013</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                data-toggle="dropdown">Web Developer</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Software Engineer</a>
+                                <a class="dropdown-item" href="#">Software Tester</a>
+                                <a class="dropdown-item" href="#">Frontend Developer</a>
+                                <a class="dropdown-item" href="#">UI/UX Developer</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$72000</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-warning text-white">Generate Slip</button></td>
+                    <td><i class="fa fa-ellipsis-v text-right" style="font-size:30px"></i></td>
+                </tr>
+                <!-- box 10 -->
+                <tr>
+                    <td><img src="../attendance-management/user (1).jpg" class="rounded-circle" width="30"
+                            height="30">Tarah Shropshire<footer class="blockquote-footer">Android Developer</footer>
+                    </td>
+                    <td>FT-0011</td>
+                    <td>tarahshropshire@example.com</td>
+                    <td>1 Jan 2013</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                data-toggle="dropdown">Android Developer</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Software Engineer</a>
+                                <a class="dropdown-item" href="#">Software Tester</a>
+                                <a class="dropdown-item" href="#">Frontend Developer</a>
+                                <a class="dropdown-item" href="#">UI/UX Developer</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$92400</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-warning text-white">Generate Slip</button></td>
+                    <td><i class="fa fa-ellipsis-v text-right" style="font-size:30px"></i></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Showing 1 to 2 of 2 entries</p>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-right text-warning">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item"><a class="page-link text-warning" href="#;">Previous</a></li>
+                        <li class="page-item bg-warning"><a
+                                class=" page-link bg-warning border-color-warning text-white" href="#;">1</a></li>
+                        <li class="page-item"><a class="page-link text-warning" href="#;">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

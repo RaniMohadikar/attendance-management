@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tickets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10">
+                <h3>Tickets</h3>
+            </div>
+            <div class="col-sm-2 text-right">
+                <button type="button" class="btn btn-warning badge badge-pill" style="height: 60%;">+ Add New
+                    Tickets</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-2">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text-block" class="form-control mb-2 mr-xl-2" id="Item name"
+                            placeholder="Employee Name" name="name">
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-2">
+                <select class="form-control form-control mb-2 mr-xl-4">
+                    <option>...Select...</option>
+                    <option value="bg-warning">Peding</option>
+                    <option value="1">Approved</option>
+                    <option value="1">Returnd</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <select class="form-control form-control mb-2 mr-xl-4">
+                    <option>...select...</option>
+                    <option value="bg-warning">Hight</option>
+                    <option value="1">Low</option>
+                    <option value="1">Medium</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <input type="date" class="form-control" placeholder="From" name="text2">
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-2">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <input type="date" class="form-control" placeholder="To" name="To">
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-2">
+                <button type="Search" class="btn btn-success btn-block">SEARCH</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dropdown">
+                    show
+                    <button type="button" class="dropdown-toggle" style="width: 5%;" data-toggle="dropdown">
+                        10
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">10</a>
+                        <a class="dropdown-item" href="#">25</a>
+                        <a class="dropdown-item" href="#">50</a>
+                        <a class="dropdown-item" href="#">100</a>
+                    </div>
+                    entries
+                </div>
+            </div>
+        </div>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <!-- <--table heading-->
+                    <th>Ticket Id</th>
+                    <th><i class="fa fa-sort-amount-desc"></i>Ticket Subject</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i>Assinged Staff</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i>Created Date</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i>Late Reply</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i>priority</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i></th>
+                    <th>Status</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i></th>
+                    <th>Action<i style="font-size:20px" class="fa">&#8645;</i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="text-info">#TKT-0001</td>
+                    <td>Laptop Issue</td>
+                    <td>John Smith</td>
+                    <td>5 May 2017 07:21 AM</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle" style="width: 100%;"
+                                data-toggle="dropdown">
+                                <i class="fa fa-dot-circle-o" style="width: 25%; color: red"></i>High</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="width: 25%; color: red"></i>High</a>
+                                <a class="dropdown-item " href="#"><i class="fa fa-dot-circle-o" style="width: 25%; color: orange"></i>Medium</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="width: 25%; color:green"></i>Low</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle" style="width: 100%;"
+                                data-toggle="dropdown">
+                                <i class="fa fa-dot-circle-o" style="width: 25%; color: red"></i>New</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="width: 25%; color:blue"></i>Open</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="width: 25%; color:blue"></i>Reopened</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="width: 25%; color: red"></i>On Hold</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="width: 25%; color:green"></i>Closed</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="width: 25%; color:green"></i>In Progress</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="width: 25%; color: red"></i>Cancelled</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td><i class="fa fa-ellipsis-v" style="font-size:30px"></i></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Showing 1 to 2 of 2 entries</p>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-right text-warning">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item"><a class="page-link text-warning" href="#;">Previous</a></li>
+                        <li class="page-item bg-warning"><a
+                                class=" page-link bg-warning border-color-warning text-white" href="#;">1</a></li>
+                        <li class="page-item"><a class="page-link text-warning" href="#;">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

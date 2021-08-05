@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+<div class="container-fluid">
+    <div class="jumbotron">
+    <div class="row">
+
+<!--Header Side  -->
+    <div class="col-sm-10">
+        <h4>Jobs</h4>
+    </div>
+
+    <div class="col-sm-2">
+        <button type="button" class="btn btn-warning badge badge-pill">+ Add New Jobs</button>
+    </div>
+
+<!-- drop down button -->
+    <div class="col-sm-1">
+        <p>Show</p>
+    </div>
+
+    <div class="col-sm-0.5">
+        <div class="dropdown">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">10</button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">25</a>
+            <a class="dropdown-item" href="#">50</a>
+            <a class="dropdown-item" href="#">100</a>
+            </div>
+        </div>     
+    </div>
+
+    <div class="col-sm-1">
+        <p>entries</p>
+    </div>
+
+<!-- Table -->
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th><i class="fa fa-sort-amount-asc"></i>Job Title</th>
+            <th><i style="font-size:24px" class="fa">&#8645;</i>Department</th>
+            <th><i style="font-size:24px" class="fa">&#8645;</i>Start Date</th>
+            <th><i style="font-size:24px" class="fa">&#8645;</i>Deu Date</th>
+            <th><i style="font-size:24px" class="fa">&#8645;</i>Job Type</th>
+            <th><i style="font-size:24px" class="fa">&#8645;</i>Status</th>
+            <th><i style="font-size:24px" class="fa">&#8645;</i>Applicants</th>
+            <th><i style="font-size:24px" class="fa">&#8645;</i>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Web Developer</td>
+                <td>Development</td>
+                <td>3 Jul 2018</td>
+                <td>25 Sep 2018</td>
+                <td><div class="dropdown">
+                    <button type="button" class="text-right btn btn-outline-dark badge badge-pill dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Full Time</button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Full Time</a>
+                      <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Part Time</a>
+                      <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Internship</a>
+                      <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:orange"></i>Temporary</a>
+                      <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:yellow"></i>Other</a>
+                    </div>
+                  </div>
+                </td>
+                <td><div class="dropdown">
+                    <button type="button" class="text-right btn btn-outline-dark badge badge-pill dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Open</button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Open</a>
+                      <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Closed</a>
+                      <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Cancelled</a>
+                    </div>
+                  </div>
+                </td>
+                <td><button type="button" class="btn btn-warning btn-block">3 Candidates</button></td>
+                <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+            </tr>
+        </tbody>
+    </table>
+
+<!-- Pagintion -->
+    <div class="col-sm-10">
+        <p>Showing 1 to 1 of 1 entries</p>
+    </div>
+
+    <div class="col-sm-2">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+    </div>
+
+    </div>       
+    </div>
+</div>
+
+</body>
+</html>

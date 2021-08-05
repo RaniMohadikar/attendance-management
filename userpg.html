@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+<div class="container-fluid">
+    <div class="jumbotron">
+    <div class="row">
+
+  <!--Header Side  -->
+    <div class="col-sm-10">
+      <h4>User</h4>
+    </div>
+
+    <div class="col-sm-2">
+        <button type="button" class="btn btn-warning badge badge-pill">+ Add User</button>
+    </div>
+
+<!-- 2nd line -->
+<div class="col-sm-3">
+    <form action="/action_page.php">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Name" name="text2">
+        </div>
+      </form>
+</div>
+
+<div class="col-sm-3">
+    <div class="btn-group btn-block">
+        <button type="button" class="btn btn-light"><header class="blockquote-header">Company</header>Select Company</button>
+        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Select Company</a>
+          <a class="dropdown-item" href="#">Global Tecnologies</a>
+          <a class="dropdown-item" href="#">Delta Infotech</a>
+        </div>
+      </div>
+</div>
+
+<div class="col-sm-3">
+    <div class="btn-group btn-block">
+        <button type="button" class="btn btn-light"><header class="blockquote-header">Roll</header>Select Roll</button>
+        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Web Developer</a>
+          <a class="dropdown-item" href="#">Web Designer</a>
+          <a class="dropdown-item" href="#">Android Developer</a>
+          <a class="dropdown-item" href="#">IOS Developer</a>
+        </div>
+      </div>
+</div>
+
+<div class="col-sm-3">
+    <button type="button" class="btn btn-success btn-block">Search</button>
+</div>
+
+<!-- Table -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th><i class="fa fa-sort-amount-asc"></i>Email</th>
+      <th><i style="font-size:24px" class="fa">&#8645;</i>Company</th>
+      <th><i style="font-size:24px" class="fa">&#8645;</i>Created Date</th>
+      <th><i style="font-size:24px" class="fa">&#8645;</i>Role</th>
+      <th><i style="font-size:24px" class="fa">&#8645;</i>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><button type="button" class="btn btn-secondary">B</button></td>
+      <td>Bernardo Galaviz<footer class="blockquote-footer">Web Developer</footer></td>
+      <td>barnardo@example.com</td>
+      <td>Global Technologies</td>
+      <td>5 Aug 2017</td>
+      <td><button type="button" class="btn btn-outline-info btn-block">Client</button></td>
+      <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+    </tr>
+
+    <tr>
+      <td><button type="button" class="btn btn-secondary">J</button></td>
+      <td>Jeffery Lalor<footer class="blockquote-footer">Team Leader</footer></td>
+      <td>jefferylolor@example.com</td>
+      <td>Focus Technologies</td>
+      <td>5 Aug 2017</td>
+      <td><button type="button" class="btn btn-outline-danger btn-block">Admin</button></td>
+      <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+    </tr>
+
+    <tr>
+      <td><button type="button" class="btn btn-secondary">C</button></td>
+      <td>Catherine Manseau<footer class="blockquote-footer">Android Developer</footer></td>
+      <td>catherine@example.com</td>
+      <td>Focus Technologies</td>
+      <td>5 Aug 2017</td>
+      <td><button type="button" class="btn btn-outline-success btn-block">Employee</button></td>
+      <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+    </tr>
+
+    <tr>
+      <td><button type="button" class="btn btn-secondary">J</button></td>
+      <td>Jeffrey Warden<footer class="blockquote-footer">Web Developer</footer></td>
+      <td>jeffrey@example.com</td>
+      <td>Focus Technologies</td>
+      <td>5 Aug 2017</td>
+      <td><button type="button" class="btn btn-outline-success btn-block">Employee</button></td>
+      <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+    </tr>
+
+    <tr>
+      <td><button type="button" class="btn btn-secondary">J</button></td>
+      <td>John Doe<footer class="blockquote-footer">Web Designer</footer></td>
+      <td>johndoe@example.com</td>
+      <td>Focus Technologies</td>
+      <td>5 Aug 2017</td>
+      <td><button type="button" class="btn btn-outline-success btn-block">Employee</button></td>
+      <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+    </tr>
+
+    <tr>
+      <td><button type="button" class="btn btn-secondary">B</button></td>
+      <td>Bernardo Galaviz<footer class="blockquote-footer">Web Developer</footer></td>
+      <td>barnardo@example.com</td>
+      <td>Focus Technologies</td>
+      <td>5 Aug 2017</td>
+      <td><button type="button" class="btn btn-outline-success btn-block">Employee</button></td>
+      <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+    </tr>
+
+    </tbody>
+</table>
+
+<!-- Pagintion -->
+<div class="col-sm-10">
+  <p>Showing 1 to 7 of 7 entries</p>
+</div>
+
+<div class="col-sm-2">
+<ul class="pagination">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+</div>
+
+
+
+    </div>       
+    </div>
+</div>
+
+</body>
+</html>

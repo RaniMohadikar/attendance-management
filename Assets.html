@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Assets</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="jumbotron">
+  <div class="row">
+
+<!--Header Side  -->
+  <div class="col-sm-10">
+      <h4>Assets</h4>
+  </div>
+  <div class="col-sm-2">
+    <button type="button" class="btn btn-warning badge badge-pill">+ Add Asset</button>
+</div>
+<br>
+
+
+<div class="col-sm-3">
+  <form action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Employee Name" name="text2">
+      </div>
+    </form>
+</div>
+<div class="col-sm-3">
+  <div class="btn-group btn-block">
+      <button type="button" class="btn btn-light"><header class="blockquote-header">Leave Type</header>--Select--</button>
+      <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Pending</a>
+        <a class="dropdown-item" href="#">Approved</a>
+        <a class="dropdown-item" href="#">Returened</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <form action="/action_page.php">
+        <div class="form-group">
+          <input type="date" class="form-control" placeholder="From" name="text2">
+        </div>
+      </form>
+</div>
+<div class="col-sm-2">
+  <form action="/action_page.php">
+      <div class="form-group">
+        <input type="date" class="form-control" placeholder="To" name="text2">
+      </div>
+    </form>
+</div>
+<div class="col-sm-2">
+  <button type="button" class="btn btn-success btn-block">Search</button>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="dropdown">
+      Show
+      <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">
+        10
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">10</a>
+        <a class="dropdown-item" href="#">25</a>
+        <a class="dropdown-item" href="#">50</a>
+        <a class="dropdown-item" href="#">100</a>
+      </div>
+      entries
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Table -->
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Asset User</th>
+      <th><i class="fa fa-sort-amount-asc"></i>Asset Name</th>
+      <th><i style="font-size:20px" class="fa">&#8645;</i>Asset ID</th>
+      <th><i style="font-size:20px" class="fa">&#8645;</i>Purchase Data</th>
+      <th><i style="font-size:20px" class="fa">&#8645;</i>Warrenty</th>
+      <th><i style="font-size:20px" class="fa">&#8645;</i>Warrenty End</th>
+      <th><i style="font-size:20px" class="fa">&#8645;</i>Amount</th>
+      <th><i style="font-size:20px" class="fa">&#8645;</i>Status</th>
+      <th><i style="font-size:20px" class="fa">&#8645;</i></th>
+      <th>Action<i style="font-size:20px" class="fa">&#8645;</i></th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- box1 -->
+      <tr>
+        <td>Bernardo Galaviz</td>
+        <td>Dell Laptop</td>
+        <td>#AST-0007</td>
+        <td>5 May 2017</td>
+        <td>12 Months</td>
+        <td>5 May 2017</td>
+        <td>$1215</td>
+        <td>
+          <div class="dropdown">
+            <button type="button" class="text-right btn btn-outline-dark badge badge-pill dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Pending</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Pending</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</a>
+            </div>
+          </div> 
+        </td>
+        <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td>
+    </tr>
+
+    <!-- box2 -->
+  <tr>
+    <td>Catherin Galaviz</td>
+    <td>Canon Portal Printer</td>
+    <td>#AST-0012</td>
+    <td>5 Apr 2017</td>
+    <td>12 Months</td>
+    <td>5 Apr 2017</td>
+    <td>$2500</td>
+    <td>
+      <div class="dropdown">
+        <button type="button" class="text-right btn btn-outline-dark badge badge-pill dropdown-toggle" data-toggle="dropdown">
+          <i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Pending</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</a>
+        </div>
+      </div> 
+    </td>
+    <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td>
+</tr>
+
+  <!-- box2 -->
+  <tr>
+    <td>Jedffery Lalor</td>
+    <td>Canon Portal Printer</td>
+    <td>#AST-0009</td>
+    <td>5 Apr 2017</td>
+    <td>12 Months</td>
+    <td>5 Apr 2017</td>
+    <td>$2500</td>
+    <td>
+      <div class="dropdown">
+        <button type="button" class="text-right btn btn-outline-dark badge badge-pill dropdown-toggle" data-toggle="dropdown">
+          <i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Pending</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</a>
+        </div>
+      </div> 
+    </td>
+    <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td>
+  </tr>
+    <!-- box2 -->
+<tr>
+  <td>Jeffery Warden</td>
+  <td>Seagate Harddids</td>
+  <td>#AST-0012</td>
+  <td>5 Apr 2017</td>
+  <td>12 Months</td>
+  <td>5 Apr 2017</td>
+  <td>$2500</td>
+  <td>
+    <div class="dropdown">
+      <button type="button" class="text-right btn btn-outline-dark badge badge-pill dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Pending</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</a>
+      </div>
+    </div> 
+  </td>
+  <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td>
+</tr>
+
+<tr>
+  <td>Jeffery Warden</td>
+  <td>Seagate Harddids</td>
+  <td>#AST-0012</td>
+  <td>5 Apr 2017</td>
+  <td>12 Months</td>
+  <td>5 Apr 2017</td>
+  <td>$2500</td>
+  <td>
+    <div class="dropdown">
+      <button type="button" class="text-right btn btn-outline-dark badge badge-pill dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Pending</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</a>
+      </div>
+    </div> 
+  </td>
+  <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td>
+</tr>
+
+<tr>
+  <td>Jeffery Warden</td>
+  <td>Seagate Harddids</td>
+  <td>#AST-0012</td>
+  <td>5 Apr 2017</td>
+  <td>12 Months</td>
+  <td>5 Apr 2017</td>
+  <td>$2500</td>
+  <td>
+    <div class="dropdown">
+      <button type="button" class="text-right btn btn-outline-dark badge badge-pill dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Pending</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</a>
+      </div>
+    </div> 
+  </td>
+  <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td>
+</tr>
+
+<tr>
+  <td>Jeffery Warden</td>
+  <td>Seagate Harddids</td>
+  <td>#AST-0012</td>
+  <td>5 Apr 2017</td>
+  <td>12 Months</td>
+  <td>5 Apr 2017</td>
+  <td>$2500</td>
+  <td>
+    <div class="dropdown">
+      <button type="button" class="text-right btn btn-outline-dark badge badge-pill dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Pending</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</a>
+      </div>
+    </div> 
+  </td>
+  <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td>
+</tr>
+
+<tr>
+  <td>Jeffery Warden</td>
+  <td> Dell Laptop</td>
+  <td>#AST-0012</td>
+  <td>5 Apr 2017</td>
+  <td>12 Months</td>
+  <td>5 Apr 2017</td>
+  <td>$2500</td>
+  <td>
+    <div class="dropdown">
+      <button type="button" class="text-right btn btn-outline-dark badge badge-pill dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Pending</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Pending</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</a>
+      </div>
+    </div> 
+  </td>
+  <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td>
+</tr>
+
+<tr>
+  <td>Jeffery Warden</td>
+  <td>Dell Laptop</td>
+  <td>#AST-0012</td>
+  <td>5 Apr 2017</td>
+  <td>12 Months</td>
+  <td>5 Apr 2017</td>
+  <td>$2500</td>
+  <td>
+    <div class="dropdown">
+      <button type="button" class="text-right btn btn-outline-dark badge badge-pill dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:red"></i>Pending</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:green"></i>Approved</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o" style="font-size:13px;color:blue"></i>Returned</a>
+      </div>
+    </div> 
+  </td>
+  <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td>
+</tr>
+
+  </tbody>
+</table>
+    <!-- Pagintion -->
+    <div class="row">
+    <div class="col-sm-10">
+      <p>Showing 1 to 10 of 12 entries</p>
+  </div>
+
+  <div class="col-sm-2">
+  <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+  </div>
+    </div>
+      </div>       
+  </div>
+</div>
+
+</body>
+</html>

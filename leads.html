@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+<div class="container-fluid">
+    <div class="jumbotron">
+    <div class="row">
+
+<!--Header Side  -->
+    <div class="col-sm-12">
+        <h4>Leads</h4>
+    </div>
+
+    <br>
+
+<!-- drop down button -->
+    <div class="col-sm-1">
+        <p>Show</p>
+    </div>
+
+    <div class="col-sm-0.5">
+        <div class="dropdown">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">10</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">25</a>
+              <a class="dropdown-item" href="#">50</a>
+              <a class="dropdown-item" href="#">100</a>
+            </div>
+        </div>     
+    </div>
+
+    <div class="col-sm-1">
+        <p>entries</p>
+    </div>
+    
+
+<!-- Table -->
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th><i class="fa fa-sort-amount-asc"></i>Lead Name</th>
+        <th><i style="font-size:24px" class="fa">&#8645;</i>Email</th>
+        <th><i style="font-size:24px" class="fa">&#8645;</i>Phone</th>
+        <th><i style="font-size:24px" class="fa">&#8645;</i>Project</th>
+        <th><i style="font-size:24px" class="fa">&#8645;</i>Assigned Staff</th>
+        <th><i style="font-size:24px" class="fa">&#8645;</i>Status</th>
+        <th><i style="font-size:24px" class="fa">&#8645;</i>Created</th>
+        <th><i style="font-size:24px" class="fa">&#8645;</i>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- box1 -->
+      <tr>
+        <td>1</td>
+        <td>Wilmer Deluna</td>
+        <td>wilmerdeluna@example.com</td>
+        <td>9876543210</td>
+        <td>Harvey Clinic</td>
+        <td><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-plus" style="font-size:30px;color: red;"></i></td>
+        <td><button type="button" class="btn btn-outline-success">Working</button></td>
+        <td>10 hrs ago</td>
+        <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+      </tr>
+      <!-- box2 -->
+      <tr>
+        <td>2</td>
+        <td>Lesley Grauer</td>
+        <td>lesleygrauer@example.com</td>
+        <td>9876543210</td>
+        <td>Penabook</td>
+        <td><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-plus" style="font-size:30px;color: red;"></i></td>
+        <td><button type="button" class="btn btn-outline-success">Working</button></td>
+        <td>5 Dec 2017</td>
+        <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+      </tr>
+      <!-- box3 -->
+      <tr>
+        <td>3</td>
+        <td>Jeffery Lalor</td>
+        <td>jefferylalor@example.com</td>
+        <td>9876543210</td>
+        <td>Food and Drinks</td>
+        <td><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-plus" style="font-size:30px;color: red;"></i></td>
+        <td><button type="button" class="btn btn-outline-success">Working</button></td>
+        <td>30 Nov 2017</td>
+        <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+      </tr>
+      <!-- box4 -->
+      <tr>
+        <td>4</td>
+        <td>Wilmer Deluna</td>
+        <td>wilmerdeluna@example.com</td>
+        <td>9876543210</td>
+        <td>Harvey Clinic</td>
+        <td><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-plus" style="font-size:30px;color: red;"></i></td>
+        <td><button type="button" class="btn btn-outline-success">Working</button></td>
+        <td>10 hrs ago</td>
+        <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+      </tr>
+      <!-- box5 -->
+      <tr>
+        <td>5</td>
+        <td>Lesley Grauer</td>
+        <td>lesleygrauer@example.com</td>
+        <td>9876543210</td>
+        <td>Penabook</td>
+        <td><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-plus" style="font-size:30px;color: red;"></i></td>
+        <td><button type="button" class="btn btn-outline-success">Working</button></td>
+        <td>5 Dec 2017</td>
+        <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+      </tr>
+      <!-- box6 -->
+      <tr>
+        <td>6</td>
+        <td>Jeffery Lalor</td>
+        <td>jefferylalor@example.com</td>
+        <td>9876543210</td>
+        <td>Food and Drinks</td>
+        <td><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-plus" style="font-size:30px;color: red;"></i></td>
+        <td><button type="button" class="btn btn-outline-success">Working</button></td>
+        <td>30 Nov 2017</td>
+        <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+      </tr>
+      <!-- box7 -->
+      <tr>
+        <td>7</td>
+        <td>Wilmer Deluna</td>
+        <td>wilmerdeluna@example.com</td>
+        <td>9876543210</td>
+        <td>Harvey Clinic</td>
+        <td><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-plus" style="font-size:30px;color: red;"></i></td>
+        <td><button type="button" class="btn btn-outline-success">Working</button></td>
+        <td>10 hrs ago</td>
+        <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+      </tr>
+      <!-- box8 -->
+      <tr>
+        <td>8</td>
+        <td>Lesley Grauer</td>
+        <td>lesleygrauer@example.com</td>
+        <td>9876543210</td>
+        <td>Penabook</td>
+        <td><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-plus" style="font-size:30px;color: red;"></i></td>
+        <td><button type="button" class="btn btn-outline-success">Working</button></td>
+        <td>5 Dec 2017</td>
+        <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+      </tr>
+      <!-- box9 -->
+      <tr>
+        <td>9</td>
+        <td>Jeffery Lalor</td>
+        <td>jefferylalor@example.com</td>
+        <td>9876543210</td>
+        <td>Food and Drinks</td>
+        <td><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-plus" style="font-size:30px;color: red;"></i></td>
+        <td><button type="button" class="btn btn-outline-success">Working</button></td>
+        <td>30 Nov 2017</td>
+        <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+      </tr>
+      <!-- box10 -->
+      <tr>
+        <td>10</td>
+        <td>Wilmer Deluna</td>
+        <td>wilmerdeluna@example.com</td>
+        <td>9876543210</td>
+        <td>Harvey Clinic</td>
+        <td><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-circle-o" style="font-size:30px"></i><i class="fa fa-user-plus" style="font-size:30px;color: red;"></i></td>
+        <td><button type="button" class="btn btn-outline-success">Working</button></td>
+        <td>10 hrs ago</td>
+        <td style="text-align: right;"> <td><i style="font-size:24px" class="fa">&#xf142;</i></td></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+<!-- Pagintion -->
+<div class="col-sm-10">
+  <p>Showing 1 to 10 of 12 entries</p>
+</div>
+
+<div class="col-sm-2">
+<ul class="pagination">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+</div>
+    
+    </div>       
+    </div>
+</div>
+
+</body>
+</html>

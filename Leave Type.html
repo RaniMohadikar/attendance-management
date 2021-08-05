@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Leave Type</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10">
+                <h3>Leave Type</h3>
+            </div>
+            <div class="col-sm-2 text-right">
+                <button type="button" class="btn btn-warning badge badge-pill" style="height: 60%;">+ Add Leave
+                    Type</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dropdown">
+                    show
+                    <button type="button" class="dropdown-toggle" style="width: 5%;" data-toggle="dropdown">
+                        10
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">10</a>
+                        <a class="dropdown-item" href="#">25</a>
+                        <a class="dropdown-item" href="#">50</a>
+                        <a class="dropdown-item" href="#">100</a>
+                    </div>
+                    entries
+                </div>
+            </div>
+        </div>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <!-- <--table heading-->
+                    <th>#</th>
+                    <th><i class="fa fa-sort-amount-desc"></i>Leave Type</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i>Leave Days</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i>Status</th>
+                    <th><i style="font-size:20px" class="fa">&#8645;</i></th>
+                    <th>Action<i style="font-size:20px" class="fa">&#8645;</i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Casual Leave</td>
+                    <td>12 Days</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                style="width: 50%;" data-toggle="dropdown">
+                                <i class="fa fa-dot-circle-o" style="width: 15%; color:green"></i>Active</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o"
+                                        style="width: 25%; color:green"></i>Active</a>
+                                <a class="dropdown-item " href="#"><i class="fa fa-dot-circle-o"
+                                        style="width: 25%; color: red"></i>Inactive</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td><i class="fa fa-ellipsis-v" style="font-size:30px"></i></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Medical Leave</td>
+                    <td>12 Days</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                style="width: 50%;" data-toggle="dropdown">
+                                <i class="fa fa-dot-circle-o" style="width: 15%; color:red"></i>Inactive</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o"
+                                        style="width: 25%; color:green"></i>Active</a>
+                                <a class="dropdown-item " href="#"><i class="fa fa-dot-circle-o"
+                                        style="width: 25%; color: red"></i>Inactive</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td><i class="fa fa-ellipsis-v" style="font-size:30px"></i></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Loss of Pay</td>
+                    <td>-</td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-secondary badge-pill dropdown-toggle"
+                                style="width: 50%;" data-toggle="dropdown">
+                                <i class="fa fa-dot-circle-o" style="width: 15%; color:green"></i>Active</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o"
+                                        style="width: 25%; color:green"></i>Active</a>
+                                <a class="dropdown-item " href="#"><i class="fa fa-dot-circle-o"
+                                        style="width: 25%; color: red"></i>Inactive</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td><i class="fa fa-ellipsis-v" style="font-size:30px"></i></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Showing 1 to 2 of 2 entries</p>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-right text-warning">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item"><a class="page-link text-warning" href="#;">Previous</a></li>
+                        <li class="page-item bg-warning"><a
+                                class=" page-link bg-warning border-color-warning text-white" href="#;">1</a></li>
+                        <li class="page-item"><a class="page-link text-warning" href="#;">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
